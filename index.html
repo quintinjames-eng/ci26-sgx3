@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quintin Ampofo | Software Engineer</title>
-  <meta name="description" content="Quintin Ampofo portfolio showcasing software engineering projects, resume, and LinkedIn." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quintin Ampofo — Software Engineer</title>
+  <meta name="description" content="Quintin Ampofo — Software Engineer. Portfolio with resume and selected projects." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero" id="top">
-    <nav class="nav">
-      <div class="brand">QA</div>
+  <header class="hero" id="top" role="banner">
+    <nav class="nav" aria-label="Primary">
+      <div class="brand" aria-hidden="true">QA</div>
       <a class="nav-link" href="#projects">Projects</a>
     </nav>
 
     <section class="hero-content">
-      <p class="eyebrow">Portfolio</p>
-      <h1>Quintin Ampofo</h1>
-      <h2>Software Engineer</h2>
-      <p class="summary">Computer Science major with 4+ years of experience using Java, seeking opportunities to build skills and learn on the job. Committed to team objectives and delivering goals with energy, charisma, intelligence, and a distinctive off-beat perspective.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="Resume.pdf" download>Resume</a>
-        <a class="btn secondary" href="https://www.linkedin.com/in/quintin-ampofo-4660782b4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <div class="hero-left">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Quintin Ampofo</h1>
+        <h2>Software Engineer</h2>
+        <p class="summary">Computer Science major with 4+ years of experience using Java, seeking opportunities to build skills and learn on the job. Committed to team objectives and delivering goals with energy, charisma, intelligence, and a distinctive off-beat perspective.</p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="Resume.pdf" download>Resume</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <img src="images/profile.png" alt="Quintin Ampofo — Software Engineer headshot" class="profile-image" />
       </div>
     </section>
   </header>
 
   <main>
-    <section class="section" id="projects">
+    <section class="section" id="projects" aria-labelledby="projects-heading">
       <div class="section-heading">
         <p class="eyebrow">Selected Work</p>
-        <h3>Projects</h3>
+        <h3 id="projects-heading">Projects</h3>
       </div>
 
-      <article class="project-card featured">
+      <article class="project-card featured" aria-labelledby="p1">
         <div class="project-meta">Featured Project</div>
-        <h4>Nanoverse</h4>
-        <p>A balanced software engineering showcase team project focused on front-end execution and practical implementation. This repository demonstrates your ability to structure, build, and present a polished web application.</p>
-        <a href="https://github.com/Damone-Washington19/Winmaxxers/tree/front-end" target="_blank" rel="noopener noreferrer">View Repository</a>
+        <h4 id="p1">Nanoverse</h4>
+        <p class="project-desc">A balanced software engineering team showcase focused on front-end execution, practical implementation, and user-facing polish. Demonstrates repository structure, responsive UI choices, and deployment workflow.</p>
+        <p class="project-links">
+          <a href="https://github.com/Damone-Washington19/Winmaxxers/tree/front-end" target="_blank" rel="noopener noreferrer">View repository</a>
+        </p>
       </article>
 
       <div class="grid">
-        <article class="project-card">
-          <h4>QA_BooleanStarter</h4>
-          <p>Parses, simplifies, and traces Boolean expressions using standard Boolean algebra rules. It applies simplification iteratively, step by step, until a fixed point is reached.</p>
+        <article class="project-card" aria-labelledby="p2">
+          <h4 id="p2">QA_BooleanStarter</h4>
+          <p class="project-desc">Parses, simplifies, and traces Boolean expressions using standard algebra rules, iteratively applying simplifications until no more reductions are possible.</p>
+          <p class="project-links">
+            <a href="downloads/QA_BooleanStarter.java" download>Download file</a>
+          </p>
         </article>
 
-        <article class="project-card">
-          <h4>tree_dst</h4>
-          <p>Simulates BST and AVL trees, highlighting data structure behavior and algorithmic thinking through a clear implementation of tree operations.</p>
+        <article class="project-card" aria-labelledby="p3">
+          <h4 id="p3">tree_dst</h4>
+          <p class="project-desc">Simulates BST and AVL trees with clear API for inserts, deletes, traversals, and balance operations to illustrate core data-structure behaviors.</p>
+          <p class="project-links">
+            <a href="downloads/tree_dst.zip" download>Download ZIP</a>
+          </p>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <p>© 2026 Quintin Ampofo. Built for GitHub Pages.</p>
   </footer>
 </body>
